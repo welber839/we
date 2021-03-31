@@ -1,0 +1,259 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin:0 auto;
+    font-family: "Microsoft JhengHei";
+    font-size:16px;
+}
+
+/*////////////////////////////////////////////設定header的樣式//////////////////////////////////*/
+.headerContainer {
+    background-color:rgb(247, 244, 240);
+    width:100%;
+    position: sticky;
+    top:0px;
+    z-index: 99;
+    border-bottom: 5px solid rgb(230, 196, 162);
+}
+
+header {
+    display:grid;
+    grid-template-columns: 1fr 2fr;
+    /*border:1px solid black;*/
+    width:1263px;
+    height:100px;
+    margin:0 auto;
+    background-color:rgb(247, 244, 240);
+}
+
+.no1div {
+    height:100%;
+    float:left;
+    display:flex;
+    align-items: center;
+}
+
+.no2div {
+    width: 50%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+}
+
+nav {
+    width:90%;
+    height:40%;
+    position: relative;
+    float:left;
+    top: 25%;
+    left: 0%;
+    /*border: 1px solid black;*/
+}
+
+
+nav .navul{
+    height:100%;
+    margin:0;
+    padding:0;
+    column-count: 6;
+    column-rule: 2px solid black;
+}
+
+.navul li {
+    list-style-type: none;
+    width:100%;
+   /* border:1px solid black;*/
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+.little:visited, .little:link {
+    color:black;
+}
+
+.little:hover {
+    color: rgb(241, 196, 150);
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.little {
+    -webkit-transition: font-size 0.5s;
+    transition: font-size  0.5s;
+}
+
+.log-in {
+    width:35%;
+    height:35%;
+    position: relative;
+    top: 0%;
+    left: 54%;
+    border-radius: 0px 0px 5px 5px ;
+    background-color: rgb(168, 118, 67);
+}
+
+.log-in-type{
+    height:100%;
+    margin:0;
+    padding:0;
+    column-count: 2;
+    column-rule: 2px solid white;
+}
+
+.log-in-type li {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height:100%;
+    
+}
+.log-in-type li a{
+    color:white;
+    font-weight: bold;
+}
+.img1 {
+    width:100%;
+    height:100%;
+}
+
+
+
+/*////////////////////////////////////////////設定footer的樣式//////////////////////////////////*/
+.footerContainer{
+    width:100%;
+    background-color:  rgb(243, 243, 243);
+    border-top: 6px solid rgb(230, 196, 162);
+}
+
+footer {
+    width:100%;
+    height:250px;
+    margin:0 auto;
+    /*border-top: 6px solid darkseagreen;*/
+  
+}
+
+.fttop {
+    width:1263px;
+    margin:0 auto;
+    
+    height:85%;
+    display:flex;
+    background-color: rgb(243, 243, 243);
+    align-items: center;
+    justify-content: space-around;
+    padding-right: 0px;
+    padding-left: 170px;
+}
+
+.fttop div {
+    height:100%;
+    width:28%;
+    /*border:1px solid black;*/
+}
+
+.ftbot {
+    width:100%;
+    height:15%;
+    background-color: rgb(167, 127, 88);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:white;
+}
+.fttop p{
+    font-size: 0.5rem;
+}
+.ftbot p{
+    margin:0px;
+}
+.box1 div{
+    width:100%;
+    height:15%;
+}
+
+.box1-1 {
+    display:flex;
+}
+#box1-11, #box1-21, #box1-31{
+    height:100%;
+    width:15%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+#box1-11 img, #box1-21 img, #box1-31 img{
+    height:25px;
+    width:25px;
+}
+#box1-12, #box1-22, #box1-32{
+    height:100%;
+    width:85%
+}
+#box1-12 p, #box1-22 p, #box1-32 p{
+    text-align:left;
+}
+#box1-12 p span, #box1-22 p span, #box1-32 p span {
+    font-weight: bold;
+}
+#logo {
+    margin-top: 3.5%;
+    height:50%;
+    display:flex;
+    justify-content: center;
+}
+
+#logo img {
+    width:65%;
+    height:100%;
+    border-radius: 10px;
+    box-shadow: 0 0 5px black;
+}
+#logo img:hover {
+    width:80%;
+}
+
+#logo img {
+    -webkit-transition: width 1s;
+	transition: width 1s;
+}
+
+
+.box2 .box2-1, .box3 .box3-1{
+    padding-top:4%;
+    width:100%;
+    height:40%;
+    font-weight: bold;
+}
+
+.box2 .box2-1 p, .box3 .box3-1 p{
+    font-size: 1.25rem;
+}
+.box2 .box2-2 {
+    width:100%;
+    height:60%;
+    display:flex;
+}
+.box2 .box2-2 div{
+    width:50%;
+}
+.box2-2 ul {
+    height:100%;
+    margin:0px;
+}
+
+.box2-2 li {
+    height:33%;
+    margin:0px;
+}
+.box3 img {
+    width:30px;
+    height:30px;
+}
