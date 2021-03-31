@@ -1,0 +1,621 @@
+
+
+/*////////////////////////////////////////////設定.banner的樣式//////////////////////////////////*/
+
+.banner {
+    margin:0 auto;
+    width:calc(1263px*0.8);
+    height:calc(550px*0.8);
+    position:relative;
+}
+
+.banner div, .banner img{
+    position:absolute;
+    top:0px;
+    width:100%;
+    height:100%;
+}
+
+#btnleft {
+    display:flex;
+    position:absolute;
+    background-color:black;
+    color:white;
+    opacity:0.5;
+    height:calc(40px*0.8);
+    width:calc(20px*0.8);
+    top:50%;
+    left:0%;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+}
+
+#btnright {
+    display:flex;
+    position:absolute;
+    background-color:black;
+    color:white;
+    opacity:0.5;
+    height:calc(40px*0.8);
+    width:calc(20px*0.8);
+    top:50%;
+    right:0%;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+}
+
+.btn p, .btn2 p{
+    font-size:1.125rem;
+    margin:0px;
+}
+
+#figure1{
+    z-index: 1;
+}
+
+#figure2, #figure3, #figure4, #figure5{
+    z-index: 0;
+}
+
+.list {
+    position:absolute;
+    top:90%;
+    left:42%;
+    width:16%;
+    height:10%;
+    margin:0px;
+    padding:0px;
+    /*display:inline-block;*/
+    list-style: disc;
+    z-index: 2;
+    list-style-position: inside;
+}
+
+.list li{
+    padding-left: 10px;
+    float:left;
+    width:30px;
+}
+
+.list li::marker{
+    font-size:2rem;
+    color:white;
+}
+.list li:hover{
+    /*list-style-type: square;*/
+    cursor: pointer;
+}
+
+/*////////////////////////////////////////////設定aboutAuthor的樣式//////////////////////////////////*/
+.aboutAuthor, .dissertation {
+    margin:0px auto;
+    width:calc(1263px*0.8);
+    height:calc(490px*0.8);
+    background-color:rgb(247, 244, 240);
+}
+
+.outerContainer{
+    margin:0px auto;
+    width:calc(1263px*0.8);
+}
+
+
+.aboutAuthor h2 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    /*margin-left: 30px;*/
+    height:20px;
+}
+
+.innerBox {
+    height:276px;
+    display:grid;
+    grid-template-columns: 2fr 8fr;
+}
+
+.innerBox1 {
+    padding-left:30px;
+    padding-bottom:30px;
+    position: relative;
+}
+
+.innerBox1:after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    box-shadow:10px 10px 60px 5px rgb(247, 244, 240) inset;
+}
+
+.innerBox1 img{
+    display: block;
+}
+
+
+.innerBox2 {
+    margin-bottom: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+    display: grid;
+    grid-template-areas: "x1 one x2 two x3 three x4"
+                         "four x5 five x6 six x7 seven";
+    grid-template-columns: repeat(7,1fr);
+    grid-template-rows: repeat(2,1fr);
+    row-gap: 40px;
+}
+
+.innerBox3 {
+    display:flex;
+    align-items: center;
+    background-color: rgba(186, 117, 48,0.5);
+    border-radius: 50%;
+    box-shadow: 0 0 5px black;
+}
+
+.innerBox3:hover {
+    background-color: rgba(186, 117, 48,1);
+    cursor: pointer;
+}
+
+.innerBox3 p{
+    color:white;
+    font-weight: bold;
+    width:100%;
+    text-align: center;
+}
+
+.innerBox3 a:link, .innerBox3 a:visited {
+    color:white;
+}
+
+.one {
+    grid-area: one;
+}
+.two {
+    grid-area: two;
+}
+.three {
+    grid-area: three;
+}
+.four {
+    grid-area: four;
+}
+.five {
+    grid-area: five;
+}
+.six {
+    grid-area: six;
+}
+.seven {
+    grid-area: seven;
+}
+
+
+
+
+/*////////////////////////////////////////////設定section的樣式//////////////////////////////////*/
+section, .refrence {
+    margin:0px auto;
+    width:calc(1263px*0.8);
+    height:calc(490px*0.8);
+}
+
+.websitePicture:link, .websitePicture:visited {
+    color:black;
+}
+
+.websitePicture:hover {
+    text-decoration: underline;
+}
+
+/*////////////////////////////////////////////設定container的樣式//////////////////////////////////*/
+
+.outerContainer{
+    margin:0px auto;
+    width:calc(1263px*0.8);
+}
+
+
+h2 {
+    margin-top: 60px;
+    margin-bottom: 0px;
+    /*margin-left: 30px;*/
+    height:20px;
+}
+
+.slider_container {
+    margin:60px 0px 60px 80px;
+    width: calc(500px*0.8);
+    height: calc(350px*0.8);
+    position: relative;
+    border: 16px solid;    
+    border-color: #fff;
+    border-bottom-width: 16px;
+    background-color: #f5f5f5;
+    box-shadow: #666 0 0 4px;
+    float:left;
+}
+
+.slider_container div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+   /* filter: alpha(opacity=0);*/
+    width: 100%;
+    height: 100%;
+}
+
+.slider_container div img{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/*圖片註解格試設定*/
+.slider_container span {    
+    color: #fff;
+    background-color: rgba(126, 110, 110, 0.836);
+    position: absolute;
+    left: 0%;
+    bottom: 0px;
+    width: 100%;
+    height: 40px;
+    font-size: calc(1.875rem*0.8);
+
+    text-align:center;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    -webkit-transform:scaleY(0);
+        -ms-transform:scaleY(0);
+            transform:scaleY(0);
+    -webkit-transition: all 0.5s ease-in-out;
+            transition: all 0.5s ease-in-out;
+}
+/*滑鼠移入時改變狀態*/
+.slider_container:hover span {
+    width: 100%;
+    -webkit-transform:scaleY(1);
+        -ms-transform:scaleY(1);
+            transform:scaleY(1);
+}
+/*滑鼠移入時裝圖片的div暫停播放*/
+.slider_container:hover div {
+    -webkit-animation-play-state: paused;
+            animation-play-state: paused;
+}
+
+.container2 {
+    /*border:1px solid black;*/
+    float:right;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    margin-right: 80px;
+    width: calc(500px*0.8);
+    height: calc(350px*0.8);
+}
+.ulfig{
+    margin:0px;
+    height:90%
+}
+.lifig{
+    margin-left: 48px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-bottom:4px dotted rgb(175, 172, 172);
+    font-size: calc(1.125rem*0.8);
+}
+
+.testLink:link, .testLink:visited{
+    color:black;
+}
+
+.lifig:hover{
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.lifig::marker{
+    font-size: clac(1.125rem*0.8);
+    text-shadow: 1px 1px 1px black;
+    font-weight: bold;
+    color:rgb(189, 187, 187);
+}
+
+.seeMore {
+    height:0%;
+    display: flex;
+    align-items: center;
+    position:relative;
+}
+
+.seeMore p {
+    background-color: rgb(146, 114, 82) ;
+    color:white;
+    font-weight:bold;
+    margin:0px;
+    padding:8px;
+    position:absolute;
+    border-radius: 5px;
+    right:0px;
+    box-shadow: 0px 0px 15px rgb(241, 196, 150);
+}
+
+/*////////////////////////////////////////設定favoriteVideo的樣式//////////////////////////////////*/
+
+.favoriteVideo {
+    position:relative;
+    margin:0 auto;
+    width:calc(1263px*0.8);
+    height:calc(550px*0.8);
+    background-color:rgb(247, 244, 240);
+}
+
+/*.favoriteVideo h2 {
+    position:absolute;
+    margin-bottom: 0px;
+    margin-left: 30px;
+    height:20px;
+}*/
+
+.headingBox{
+    padding-top:48px;
+    padding-left:0px;
+    padding-bottom: 48px;
+}
+
+.headingText {
+    margin:0px;
+}
+
+.frameYoutube {
+    padding-left: 20px;
+    width:39%;
+    height:calc(305px*0.8);
+    position:relative;
+    float:left;
+}
+
+.videoSpan {
+    position:absolute;
+    top:calc(103%);
+    left:30px;
+}
+
+.yearDate {
+    color:rgb(182, 177, 177);
+    font-size: 0.8rem;
+    font-weight: bold;
+    position:absolute;
+    top:112%;
+    left:30px;
+}
+
+.frameYoutube2 {
+    padding-right: 20px;
+    width:59%;
+    height:calc(400px*0.8);
+    position:relative;
+    float:right;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: calc(150px*0.8);
+    gap: 40px 8px;
+}
+
+.videoBox {
+    position:relative;
+}
+
+.videoSpanSmall {
+    position:absolute;
+    top:calc(103%);
+    left:0px;
+}
+
+.yearDateSmall {
+    color:rgb(182, 177, 177);
+    font-size: 0.8rem;
+    font-weight: bold;
+    position:absolute;
+    top:117%;
+    left:0px;
+}
+
+/*////////////////////////////////////////設定recipe的樣式//////////////////////////////////*/
+
+.recipe {
+    margin:0 auto;
+    width:calc(1263px*0.8);
+    height:calc(550px*0.8);
+    background-color:white;
+}
+.recipe h2 {
+    margin-bottom: 0px;
+    height:20px;
+}
+
+.recipeInnerBox {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.recipeInnerBox1 {
+    height:324px;
+    margin-left:50px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.recipeInnerBox2 {
+    /*padding-bottom: 20px;*/
+    margin-right:30px;
+}
+
+.recipeInnerBox1 img{
+    border-radius: 10px;
+    height:95%;
+    position: absolute;
+    left:0;
+    top:0;
+}
+
+.recipeInnerBox3-1 {
+    height:60%;
+    display: flex;
+    align-items: center;
+}
+
+.recipeInnerBox3-1 .store {
+    width:100%;
+    height:100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.recipeInnerBox3-1 .store p{
+    position:absolute;
+    left:0;
+    line-height: 2rem;
+    font-size: 1.2rem;
+}
+
+.store span {
+    font-weight: bold;
+}
+
+
+
+.recipeInnerBox3-2 {
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    height:40%;
+}
+
+.recipeInnerBox3-21 {
+    height:100px;
+    width:30%;
+    position:relative;
+}
+
+.recipeInnerBox3-21 img {
+    position: absolute;
+    opacity: 0.5;
+    width:100%;
+    height:100%;
+    border-radius: 10px;
+}
+.recipeInnerBox3-21:nth-child(1) img{
+    opacity: 1;
+}
+
+
+.recipeInnerBox3-21 img:hover{
+    cursor: pointer;
+}
+.recipeInnerBox3-21 span {
+    border-radius: 10px;
+    background-color: rgba(126, 110, 110, 0.6);
+    color:white;
+    position: absolute;
+    width:100%;
+    height:100%;
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 100px;
+    -webkit-transform:scaleY(0);
+        -ms-transform:scaleY(0);
+            transform:scaleY(0);
+    -webkit-transition: all 0.5s ease-in-out;
+            transition: all 0.5s ease-in-out;
+}
+
+.recipeInnerBox3-21:hover span {
+    cursor: pointer;
+    width: 100%;
+    -webkit-transform:scaleY(1);
+        -ms-transform:scaleY(1);
+            transform:scaleY(1);
+}
+
+
+/*////////////////////////////////////////設定dissertation的樣式//////////////////////////////////*/
+
+
+.dissertationInnerBox {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.dissertationInnerBox1 {
+    height:276px;
+    margin-left:100px;
+    padding-bottom:30px;
+}
+
+.dissertationInnerBox1 img{
+    height:100%;
+}
+
+.dissertationInnerBox1 img:hover{
+    height:105%;
+}
+
+.dissertationInnerBox2 {
+    line-height: 1.8rem;
+    padding-right:30px;
+}
+.dissertationPara {
+    margin:0;
+}
+
+.titlePara{
+    margin:0;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.seeMoreText {
+    color:rgb(187, 179, 179);
+    text-shadow: 1px 1px 0px black;
+}
+
+.seeMoreText:hover {
+    cursor: pointer;
+}
+
+/*////////////////////////////////////////設定refrence的樣式//////////////////////////////////*/
+
+.reIn{
+    
+    display: flex;
+    height:276px;
+}
+
+.reIn ul {
+    margin-top: 0px;
+    font-size: 1.05rem;
+    line-height: 3rem;
+    list-style-type: none;
+}
+
+.refrenceInnerbox2, .refrenceInnerbox3, .refrenceInnerbox4 {
+    margin-left:100px;
+
+}
+
+.webLink:link, .webLink:visited{
+    color:black;
+}
+
+.webLink:hover{
+    text-decoration: underline;
+}
